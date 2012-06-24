@@ -1,5 +1,4 @@
-global:
-  directory: /home/user/backups/git
+directory: /home/user/backups/git
 
 repos:
     - type: Example
