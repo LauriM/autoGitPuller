@@ -1,7 +1,7 @@
 autoGitPuller
 =============
 
-autoGitPuller backups Github/Bitbucket accounts automatically to your local machine/server. Its written in Ruby and has few requirements to work.
+autoGitPuller backups Github/Bitbucket accounts automatically to your local machine/server. Its written in Ruby and has only few requirements.
 
 Currently only supports Git backupping from Bitbucket.
 
