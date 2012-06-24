@@ -1,6 +1,10 @@
-directory: /home/user/backups/git
+directory: /home/user/backups/git/
 
 repos:
-    - type: Example
+    - type: Github
+      username: example
+      password: example
+
+    - type: Bitbucket
       username: example
       password: example
