@@ -1,0 +1,7 @@
+global:
+  directory: /home/user/backups/git
+
+repos:
+    - type: Example
+      username: example
+      password: example
