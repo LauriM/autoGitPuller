@@ -4,8 +4,7 @@ require 'yaml'
 
 puts "Starting automatic Github/Bitbucket backupping tool!"
 
-puts "Reading configs from ./config.yaml"
-$config = YAML.load_file("config.yaml")
+$config = YAML.load_file("~/.autogitpuller.yaml")
 
 
 def backupGithub(username,password)
