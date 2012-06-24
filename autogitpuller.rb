@@ -47,7 +47,7 @@ def backupBitbucket(username,password)
 	while i < data["repositories"].length do
 		puts "Bitbucket/"+username+"/"+data["repositories"][i]["name"]
 
-		directory = $config["directory"] + "bitbucket" + username + "/" + data["repositories"][i]["name"]
+		directory = $config["directory"] + "bitbucket/" + username + "/" + data["repositories"][i]["name"]
 		git_url   = "git@bitbucket.org:" + username + "/" + data["repositories"][i]["name"] + ".git"
 
 		if data["repositories"][i]["scm"] == "git"
