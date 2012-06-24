@@ -4,7 +4,31 @@ require 'yaml'
 
 puts "Starting automatic Github/Bitbucket backupping tool!"
 
-$config = YAML.load_file(File.expand_path('~') + "/.autogitpuller.yaml")
+config_file = File.expand_path('~') + "/.autogitpuller.yaml"
+
+if !File.file? config_file
+	puts "*** Error ***"
+	puts "Configuration file missing!"
+	puts "Now creating configuration file for you..."
+	puts "Please update ~/.autogitpuller.yaml and run this command again."
+
+	File.open(config_file,'w') do |file|
+		file.puts "directory: /path/to/backup/directory/"
+		file.puts ""
+		file.puts "repos:"
+		file.puts "  - type: github "
+		file.puts "    username: asdf"
+		file.puts "    password: qwerty"
+		file.puts ""
+		file.puts "  - type: bitbucket"
+		file.puts "    username: asdf"
+		file.puts "    password: qwerty"
+	end
+
+	exit
+end
+
+$config = YAML.load_file(config_file)
 
 def backupGithub(username,password)
 	puts "Backupping Github/" + username
