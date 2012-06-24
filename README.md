@@ -16,11 +16,11 @@ Features
 Usage
 -----
 
-1) Place autogitpuller.rb anywhere you want.
-2) Create ~/.autogitpuller.rb using config_template.yaml as example.
-3) Make sure you have ssh keys in place for all services you want to use.
-4) Run autogitpuller.rb
-5) Add it to cron for automatic backupping
+1. Place autogitpuller.rb anywhere you want.
+2. Create ~/.autogitpuller.rb using config_template.yaml as example.
+3. Make sure you have ssh keys in place for all services you want to use.
+4. Run autogitpuller.rb
+5. Add it to cron for automatic backupping
 
 License
 -------
